@@ -130,8 +130,9 @@ h1 span{
 .header a{
     text-decoration: none;
 }
-.desc{
+.header-content .desc{
     display: inline;
+   
 }
 
 .btn{
