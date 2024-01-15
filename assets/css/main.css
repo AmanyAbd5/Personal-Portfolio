@@ -95,15 +95,7 @@ img{
     border-bottom-left-radius: 50%;
 }
 
-.imgback{
-    position: absolute;
-    top: 180px;
-    right: 230px;
-    width: 400px;
-    height: 370px;
-    background-color: var(--main-color3);
-    border-bottom-left-radius: 50%;
-}
+
 .imgback2{
     position: absolute;
     top: 160px;
@@ -181,45 +173,58 @@ h1 span{
     .header-img{
         width: 100%;
     }
-    .imgback{
-        top: 450px;
-        right: 70px;
-        width: 250px;
-        height: 220px;
-    }
+ 
     .imgback2{
         top: 430px;
-        right: 60px;
+        right: 160px;
         width: 250px;
         height: 40px;
     }
   
 }
 @media (min-width:577px) and (max-width:768px){
-    .imgback{
-        top: 190px;
-        right: 100px;
-        width: 300px;
-        height: 280px;
+    .header{
+        flex-wrap: wrap;
+    }
+    .header-content{
+       
+        font-size: 10px;
+        justify-content: center;
     }
     .imgback2{
         top: 180px;
-        right: 80px;
-        width: 300px;
+        right: 40px;
+        width: 250px;
         height: 400px;
     }
 }
 @media (min-width:769px) and (max-width:992px){
-    .imgback{
-        top: 310px;
-        right: 100px;
-        width: 300px;
-        height: 280px;
-    }
+
+   
     .imgback2{
-        top: 290px;
-        right: 80px;
-        width: 300px;
+        top: 160px;
+        right: 60px;
+        width: 290px;
+        height: 400px;
+    }
+}
+@media (min-width:993px) and (max-width:1200px){
+
+   
+    .imgback2{
+        top: 160px;
+        right: 90px;
+        width: 350px;
+        height: 400px;
+    }
+}
+@media (min-width:1201px) and (max-width:1400px){
+
+   
+    .imgback2{
+        top: 160px;
+        right: 160px;
+        width: 400px;
         height: 400px;
     }
 }

@@ -1,15 +1,18 @@
-function Sum(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
+function find(nums,target)
+{
+    var number=new Map;
+    for(var i=0; i<nums.length ;i++)
+    {
+        var num=target-nums[i];
+        if(number.has(num))
+        {
+            return [number.get(num),i];
         }
+        number.set(nums[i],i)
     }
-    return [];
+    return[5];
 }
-
-const nums = [2, 7, 11, 15];
-const target = 9;
-const output = Sum(nums, target);
-console.log(output); 
+var nums =[2,11,15,7];
+var target= 9;
+var result= new find(nums,target);
+console.log(result); 
